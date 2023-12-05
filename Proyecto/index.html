@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elden Ring</title>
+    <!-- enlazo el .css del estilo -->
+    <link rel="stylesheet" href="./css/blackmirror.css">
+    <link rel="shortcut icon" href="./img/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./js/index.js"></script>
+
+</head>
+<body>
+    <!-- la estructura del layout en scroll-->   
+
+    
+   <div id="wrapper"> <!-- contenedor general -->
+    <nav>
+        <div class="topnav" id="myTopnav">
+            <a href="#" class="active">Home</a>
+            <a href="#intro">Introduction</a>
+            <a href="#characters">Characters</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+    </nav><!-- obligatoria-->
+    <a href="#"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></a>
+    <section id="hero"><!-- casi obligatoria-->
+      <a href="#intro"><button>Become The Elden Ring </button></a>
+    </section>
+
+    
+
+
+    <!-- INTRO SECTION -->
+    <section id="intro">
+        
+        <!-- aqui podría poner un título o lo que fuera independientemente de las columnas-->
+        <div class="grid-2"> <!-- Contenedor del grid de 2-->
+            <div class="col-2">
+                <h1 class="title">Introducción</h1>
+                <p>Álzate, Sinluz, y que la gracia te guíe para abrazar el poder del Círculo de Elden y encumbrarte como señor del Círculo en las Tierras Intermedias.
+
+                    En las Tierras Intermedias gobernadas por la Reina Márika, la Eterna, el Círculo de Elden, origen del Árbol Áureo, ha sido destruido.
+                    
+                    Los descendientes de Márika, todos semidioses, reclamaron los fragmentos del Círculo de Elden conocidos como Grandes Runas. Fue entonces cuando la demencial corrupción de su renovada fuerza provocó una guerra: la Devastación.<span id="dots1">...</span><span id="more1" style="display: none;"><br> Una guerra que supuso el abandono de la Voluntad Mayor. Y ahora, la gracia que nos guía recaerá sobre el Sinluz desdeñado por la gracia del oro y exiliado de las Tierras Intermedias. Tú que has muerto, pero vives, con tu gracia tiempo ha perdida, recorre la senda hacia las Tierras Intermedias más allá del neblinoso mar para postrarte ante el Círculo de Elden.</span></p>
+                    <button class="intro-button"   id="myBtn1" onclick="toggleText('myBtn1', 'dots1', 'more1')">Read more</button>
+                
+            </div>
+            <div class="col-2">
+                <div class="container">
+                <iframe class="responsive-iframe" src="https://www.youtube.com/embed/CA0Ym7Ag0nI?si=3-eAYqrHWMy8Ujdc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>            </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="characters">
+        <div class="grid-4">
+            <div class="col-4">
+                <div class="card">
+                    <img src="./img/bandido.webp" alt="">
+                    <h3>Bandido</h3>
+                    <p>Un peligroso bandido que ataca a los puntos debiles.<span id="dots2">...</span><span id="more2" style="display:none"><br> Destaca en combate a distancia con arcos.</span></p>
+                    <button class="intro-button"   id="myBtn2" onclick="toggleText('myBtn2', 'dots2', 'more2')">Read more</button>
+                </div>
+              
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <img src="./img/guerrero.webp" alt="">
+                    <h3>Guerrero</h3>
+                    <p>Un guerrero de una tribu nómada que empuña armas en ambas manos.<span id="dots3">...</span><span id="more3" style="display:none"> <br>Técnica excepcional</span></p>
+                    <button class="intro-button"   id="myBtn3" onclick="toggleText('myBtn3', 'dots3', 'more3')">Read more</button>
+                    </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+
+                <img src="./img/atrologo.webp" alt="">
+                <h3>Atrólogo</h3>
+                    <p>Un erudito que lee el destino en las estrellas.<span id="dots4">...</span><span id="more4" style="display:none"><br>Seguidor de la escuela de hechiceria de estrellas refulgentes.</span></p>
+                    <button class="intro-button"   id="myBtn4" onclick="toggleText('myBtn4', 'dots4', 'more4')">Read more</button>
+                    </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+
+                <img src="./img/samurai.webp" alt="">
+                <h3>Samurai</h3>
+                    <p>Un habil luchador de los lejanos territorios del Cañaveral.<span id="dots5">...</span><span id="more5" style="display:none"> <br>Diestro con catanas y arcos largos.</span> </p>
+                    <button class="intro-button"   id="myBtn5" onclick="toggleText('myBtn5', 'dots5', 'more5')">Read more</button>
+                    </div>
+            </div>
+        </div>
+        
+        
+    </section>
+
+    <section id="gallery">
+                <div class="accordion">
+
+                <article>
+                    <input id="article1" type="radio" name="articles" checked>
+                    <label for="article1">
+                    <h2>Malenia</h2>
+                    </label>
+                    <div>
+                        <img id="introimg"  src="./img/malenia.jpg" alt="">
+                        <p>Malenia, la Espada de Miquella, también conocida como Malenia la Cercenada,fue una semidiosa y una Empírea que heredó una de las Grandes Runas. Durante la Devastación se enfrentó a sus hermanos por el control de las Tierras Intermedias.</p>
+                    </div>
+                </article>
+
+                <article>
+                    <input id="article2" type="radio" name="articles">
+                    <label for="article2">
+                    <h2>Radahn</h2>
+                    </label>
+                    <div>
+                        <img id="introimg"  src="./img/radahn.jpg" alt="">
+
+                    <p>Radahn, Azote de las Estrellas fue un semidiós y el heredero de una Gran Runa. Era un guerrero feroz que luchó contra sus hermanos por el control de las Tierras Intermedias.</p>
+                    </div>
+                </article>
+
+                <article>
+                    <input id="article3" type="radio" name="articles">
+                    <label for="article3">
+                    <h2>Maliketh</h2>
+                    </label>
+                    <div>
+                        <img id="introimg"  src="./img/maliketh.jpg" alt="">
+                    <p>Maliketh, la Hoja Negra fue hermanastro de la Reina Márika la Eterna y guardián de la Runa de la Muerte.</p>
+                    </div>
+                </article>
+
+                <article>
+                    <input id="article4" type="radio" name="articles">
+                    <label for="article4">
+                    <h2>Radagon</h2>
+                    </label>
+                    <div>
+                        <img id="introimg"  src="./img/radagon.jpg" alt="">
+                    <p>Radagon fue un campeón de la Orden Dorada, el "otro yo" de la Reina Márika la Eterna y ex esposo de la Reina Rennala de los Caria. Como Rey Consorte de Márika, se convirtió en el segundo Señor del Círculo.</p>
+                    </div>
+                </article>
+
+                </div>
+
+    </section>
+
+
+    <section>otra sección</section>
+    <section>otra sección</section>
+    <footer>
+        <div class="grid-3d">
+            
+            <div class="col-4">
+                <h3>Sigueme en redes</h3>
+                <a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
+            </div>
+            <div class="col-4">
+                algo
+            </div>
+            <div class="col-2">
+                <div class="container"><iframe class="responsive-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1901.1000950738862!2d-4.555890141605466!3d36.74041360097246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f1d2fe2a89c5%3A0xc7df40a25e5a2841!2sC.%20Frederick%20Terman%2C%203%2C%2029590%20M%C3%A1laga!5e0!3m2!1ses!2ses!4v1701687568229!5m2!1ses!2ses" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div></div>
+            <div class="col-2">
+                <h3>Site oficial</h3>
+                <a href="https://es.bandainamcoent.eu/elden-ring/elden-ring?_gl=1*1ctzt3e*_gcl_au*MTc3NzI5OTg2Ny4xNjk5ODE2NjI5" target="_blank">Elden Ring</a>
+            </div>
+        </div>
+    </footer>
+   </div>
+</body>
+</html>

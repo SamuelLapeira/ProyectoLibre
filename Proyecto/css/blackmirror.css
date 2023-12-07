@@ -1,7 +1,7 @@
 /*********************************************************/
-/*        Style sheet for Black Mirror web site          */
-/*        author: Pilar González                         */
-/*        version: 1.0                                   */
+/*        Style sheet for Elden Ring web site          */
+/*        author: Samuel Lapeira                        */
+/*        version: 1.1                                   */
 /*        comments: class project 2023-24                */
 /*********************************************************/
 
@@ -141,6 +141,25 @@ nav{
       padding-top: 6vh;
 }
 
+.title-characters{
+      font-family: blackmirror;
+      padding-top: 6vh;
+      margin-left: 2%;
+}
+
+.title-gallery{
+      font-family: blackmirror;
+      padding-top: 6vh;
+      padding-bottom: 3vh;
+      text-align: left;
+}
+.title-requisitos{
+      font-family: blackmirror;
+      padding-top: 6vh;
+      padding-bottom: 3vh;
+      text-align: left;
+      margin-left: 3%;
+}
 .grid-2{
       display: grid;
       grid-template-columns: 100% ;
@@ -279,6 +298,7 @@ nav{
 .accordion {
   max-width: 80%;
   text-align: left;
+  margin-bottom: 2%;
 }
 
 article {
@@ -312,54 +332,125 @@ input[type="radio"] {
       
 }
 
-/*************FOOTER********************************/
-footer{
-      background-color:black;
-      color: white;}
-.grid-3d{
-      display: grid;
-      grid-template-columns: 50% 50%;
-      
-}
-.col-4{padding: 4%;}
-
-footer .fa{font-size: 2em;
-margin-right: 10px
-padding 10px;
-color: white !important;}
-
-footer a{
-      text-decoration: none !important;
-      color: white;
+/******************** footer *****************************************/
+footer {background-color: black;
+      color:white;
+      }
+.grid-3d {
+         display:grid;
+         grid-template-columns: 50% 50%; 
+         margin-left: 3%;
+    
 }
 
-footer .fa-facebook{
-      background-color: #3b5998;
-      
+footer h3 {margin:20px 0;}
+
+footer .fa {
+padding: 15px 10px;
+font-size: 1.5em;
+width: 50px;
+text-align: center;
+text-decoration: none;
+margin: 5px 2px;
+border-radius:50%;
+}
+        
+footer .footer-img{
+  margin-top: 10%;
+
 }
 
-footer .fa-twitter{
-      background-color: #55acee;
+footer a {color:white;
+        text-decoration: none;}
+/****** redes sociales en footer *****/
+footer .fa-facebook {background-color:#3B5998}
+
+footer .fa-twitter {background-color:#55ACEE ;}
+
+footer .fa-whatsapp {background-color: #25D366;}
+
+/******* créditos ******************/
+
+/* The Modal (background) */
+.modal {
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+left: 10%;
+top: 0;
+width: 80%; /* Full width */
+height: 100%; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+background-color: rgb(0,0,0); /* Fallback color */
+background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+color:black;
 }
 
+/* Modal Content/Box */
+.modal-content {
+background-color: #fefefe;
+margin: 15% auto; /* 15% from the top and centered */
+padding: 20px;
+border: 1px solid #888;
+width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+color: #aaa;
+float: right;
+font-size: 28px;
+font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+color: black;
+text-decoration: none;
+cursor: pointer;
+} 
+
+#myBtn6 {cursor:pointer;}
+
+/******* google maps en footer ***************/
 
 footer .container {
-      position: relative;
-      width: 100%;
-      overflow: hidden;
-      padding-top: 56.25%; /* 16:9 Aspect Ratio */
-    }
-    
+position: relative;
+overflow: hidden;
+width: 100%;
+padding-top: 75%; /* 4:3 Aspect Ratio  */
+}
+/* copyrgiht */
+.footer__copyright {
+      margin: 0;
+      font-size: 1.4rem;
+      font-weight: 300;
+      letter-spacing: 0.03em;
+      text-align: center;
+      background-color: rgb(26, 37, 37);
+      color: #fff;
+  }
+/* Then style the iframe to fit in the container div with full height and width */
 footer .responsive-iframe {
-      position: absolute;
-      top: 10%;
-      left: 10%;
-      bottom: 0;
-      right: 0;
-      width: 80%;
-      height: 80%;
-      border: none;
-    }
+position: absolute;
+top: 10%;     /************ se baja un 10% (y queda otro 10% abajo) *******/
+left: 10%;    /************ se mueve un 10% (y queda otro 10% abajo) *******/
+bottom: 0;
+right: 0;
+width: 80%;   /**************  en vez de al 100%, deja libre un 20% *****/
+height: 80%;  /************* de alto igual ****************/
+}
+
+footer a p {font-size:1.2em;
+          margin-bottom:15px;
+          border:hidden;
+          padding-left:10px;
+          transition:1s;}
+
+footer a p:hover {color:rgb(196, 195, 195);
+                border-left:3px solid white;}
+
+
 
 
 

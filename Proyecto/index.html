@@ -6,7 +6,7 @@
     <title>Elden Ring</title>
     <!-- enlazo el .css del estilo -->
     <link rel="stylesheet" href="./css/blackmirror.css">
-    <link rel="shortcut icon" href="./img/favicon-32x32.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="./js/index.js"></script>
 
@@ -22,7 +22,7 @@
             <a href="#intro">Introduction</a>
             <a href="#characters">Characters</a>
             <a href="#gallery">Gallery</a>
-            <a href="#contact">Contact</a>
+            <a href="#requisitos">Requisitos</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
               <i class="fa fa-bars"></i>
             </a>
@@ -39,7 +39,6 @@
     <!-- INTRO SECTION -->
     <section id="intro">
         
-        <!-- aqui podría poner un título o lo que fuera independientemente de las columnas-->
         <div class="grid-2"> <!-- Contenedor del grid de 2-->
             <div class="col-2">
                 <h1 class="title">Introducción</h1>
@@ -53,12 +52,15 @@
             </div>
             <div class="col-2">
                 <div class="container">
-                <iframe class="responsive-iframe" src="https://www.youtube.com/embed/CA0Ym7Ag0nI?si=3-eAYqrHWMy8Ujdc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>            </div>
+                <iframe class=".responsive-iframe" src="https://www.youtube.com/embed/CA0Ym7Ag0nI?si=3-eAYqrHWMy8Ujdc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>            
+                </div>
             </div>
         </div>
     </section>
-    
+    <!--  Seccion de personajes  -->
     <section id="characters">
+        <h1 class="title-characters">Characters</h1>
+
         <div class="grid-4">
             <div class="col-4">
                 <div class="card">
@@ -99,8 +101,10 @@
         
         
     </section>
-
+    <!--  Seccion de galeria  -->
     <section id="gallery">
+        <h1 class="title-gallery">Gallery</h1>
+
                 <div class="accordion">
 
                 <article>
@@ -153,30 +157,108 @@
     </section>
 
 
-    <section>otra sección</section>
-    <section>otra sección</section>
+    <section id="requisitos">
+        <h1 class="title-requisitos">Requisitos</h1>
+        <div class="accordion">
+            <article>
+                <input id="article5" type="radio" name="articles" checked>
+                <label for="article5">
+                <h2>Minimos</h2>
+                </label>
+                <div>
+                    <nav>
+                        <ul>
+                            <li>OS: Windows 10</li>
+                            <li>Processor: Intel Core i5-8400 | AMD RYZEN 3 3300X</li>
+                            <li>Memory: 12 GB RAM</li>
+                            <li>Graphics: Nvidia GeForce GTX 1060, 3 GB | AMD Radeon RX 580, 4 GB</li>
+                            <li>DirectX: Version 12 (Feature Level 12.0)</li>
+                            <li>Storage: 60 GB available space</li>
+                            <li>Sound Card: Windows-Compatible Audio device</li>
+                        </ul>
+                    </nav>
+                </div>
+            </article>
+
+            <article>
+                <input id="article6" type="radio" name="articles">
+                <label for="article6">
+                <h2>Recomendados</h2>
+                </label>
+                <div>
+                    <nav>
+                        <ul>
+                            <li>OS: Windows 11/10</li>
+                            <li>Processor: Intel Core i7-8700K | AMD Ryzen 5 3600X</li>
+                            <li>Memory: 16 GB RAM</li>
+                            <li>Graphics: Nvidia GeForce GTX 1070, 8 GB | AMD Radeon RX VEGA 56, 8 GB</li>
+                            <li>DirectX: Version 12 (Feature Level 12.0)</li>
+                            <li>Storage: 60 GB available space</li>
+                            <li>Sound Card: Windows-Compatible Audio device</li>
+                        </ul>
+                    </nav>
+                </div>
+            </article>
+        </div>
+    </section>
+
+<!-- <section>otra sección</section> -->
+    <!--  Footer  -->
     <footer>
         <div class="grid-3d">
-            
             <div class="col-4">
-                <h3>Sigueme en redes</h3>
-                <a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
+
+               <h3>Sígueme en redes:</h3>
+                <a href="#" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                <a href="https://www.facebook.com/ELDENRINGOFFICIAL/?locale=es_ES" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="https://twitter.com/ELDENRING" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/eldenring/?hl=es"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                <i class="fa fa-github" aria-hidden="true"></i>
+
+               <h3>Site oficial:</h3>
+               <a href="https://es.bandainamcoent.eu/elden-ring/elden-ring" target="_blank">Elden Ring</a>
+
+                <!-- créditos hechos en ventana modal de w3school -->
+
+                <!-- Trigger/Open The Modal -->
+                <h3 id="myBtn6">Créditos</h3>
+
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis doloremque, reprehenderit vel laboriosam impedit at nam voluptas tempore sapiente provident dolores! Officia, accusamus dolore natus repellat modi maiores! Quis, iste!</p>
+                  <p>Ab quia quidem illo vel repellendus quod voluptatem rerum! Placeat quos molestiae in dignissimos sit iusto voluptas neque magni unde vitae! Eum veniam optio, libero quos aliquid ea harum quae!</p>
+                  <p>Molestias est, explicabo atque fuga nihil maxime magnam quisquam exercitationem sed in debitis expedita modi sequi velit suscipit minus animi praesentium, officia cupiditate ut maiores sunt veritatis id. Dolor, perferendis.</p>
+                </div>
+
+</div> 
+
             </div>
             <div class="col-4">
-                algo
+               <a href="#"><p>Home</p></a>
+               <a href="#intro"><p>Introduction</p></a>
+               <a href="#seasons"><p>Characters</p></a>
+               <a href="#gallery"><p>Gallery</p></a>
+               <a href="#requisitos"><p>Requisitos</p></a>
+               <a href="https://es.bandainamcoent.eu/licensing"><p>Copyright</p></a>
+               
             </div>
             <div class="col-2">
-                <div class="container"><iframe class="responsive-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1901.1000950738862!2d-4.555890141605466!3d36.74041360097246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f1d2fe2a89c5%3A0xc7df40a25e5a2841!2sC.%20Frederick%20Terman%2C%203%2C%2029590%20M%C3%A1laga!5e0!3m2!1ses!2ses!4v1701687568229!5m2!1ses!2ses" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div></div>
-            <div class="col-2">
-                <h3>Site oficial</h3>
-                <a href="https://es.bandainamcoent.eu/elden-ring/elden-ring?_gl=1*1ctzt3e*_gcl_au*MTc3NzI5OTg2Ny4xNjk5ODE2NjI5" target="_blank">Elden Ring</a>
+               <!-- google maps -->
+             <div class="container">
+              <a href="https://es.bandainamcoent.eu/"><img id="footer-img" src="./img/bandainamco.png" alt="Pagina oficial bandainamco"></a>
+             </div>
             </div>
         </div>
-    </footer>
+        <p class="footer__copyright">© 2010 - <em class="placeholder">2023</em> Bandai Namco Europe S.A.S</p>
+    </footer><!-- prácticamente obligatorio-->
    </div>
+
+    <!-- enlace al archivo de todos los js del website -->
+    <script src="./js/funtions.js"></script>
 </body>
 </html>

@@ -62,7 +62,7 @@ Sobre ella he colocado un Call to Action que he estilado a partir de los colores
 <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vidaextra.com%2Frpg%2Fnunca-imagine-que-elden-ring-me-haria-llorar-punto-no-querer-avanzar-mi-historia-malenia-espada-miquella&psig=AOvVaw2IiVuzfW-tI6iOIfoEuwTt&ust=1702812841695000&source=images&cd=vfe&opi=89978449&ved=0CA8QjRxqFwoTCNi2pKbuk4MDFQAAAAAdAAAAABAD">Malenia</a>
 <img src="./bm-readme/malenia.jpg" alt="imagen galeria" style="width:50%">
 
-<a href[="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vidaextra.com%2Frpg%2Fnunca-imagine-que-elden-ring-me-haria-llorar-punto-no-querer-avanzar-mi-historia-malenia-espada-miquella&psig=AOvVaw2IiVuzfW-tI6iOIfoEuwTt&ust=1702812841695000&source=images&cd=vfe&opi=89978449&ved=0CA8QjRxqFwoTCNi2pKbuk4MDFQAAAAAdAAAAABAD](https://cdna.artstation.com/p/assets/images/images/054/394/634/large/martin-bruno-techera-starscourge-radahn.jpg?1664437517)">Radahn</a>
+<a href="https://cdna.artstation.com/p/assets/images/images/054/394/634/large/martin-bruno-techera-starscourge-radahn.jpg?1664437517">Radahn</a>
 <img src="./bm-readme/radahn.jpg" alt="imagen galeria" style="width:50%">
 
 <a href="[https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vidaextra.com%2Frpg%2Fnunca-imagine-que-elden-ring-me-haria-llorar-punto-no-querer-avanzar-mi-historia-malenia-espada-miquella&psig=AOvVaw2IiVuzfW-tI6iOIfoEuwTt&ust=1702812841695000&source=images&cd=vfe&opi=89978449&ved=0CA8QjRxqFwoTCNi2pKbuk4MDFQAAAAAdAAAAABAD](https://www.google.com/url?sa=i&url=https%3A%2F%2Feldenring.fandom.com%2Fwiki%2FMaliketh%2C_the_Black_Blade&psig=AOvVaw0vRNvVpoveVsQIo_v0dRqK&ust=1702812875428000&source=images&cd=vfe&opi=89978449&ved=0CA8QjRxqFwoTCODimbfuk4MDFQAAAAAdAAAAABAD)">Maliketh</a>

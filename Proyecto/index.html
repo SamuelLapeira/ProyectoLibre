@@ -18,10 +18,10 @@
    <div id="wrapper"> <!-- contenedor general -->
     <nav>
         <div class="topnav" id="myTopnav">
-            <a href="#" class="active">Home</a>
-            <a href="#intro">Introduction</a>
-            <a href="#characters">Characters</a>
-            <a href="#gallery">Gallery</a>
+            <a href="#" class="active">Inicio</a>
+            <a href="#intro">Introduccion</a>
+            <a href="#Personajes">Personajes</a>
+            <a href="#Galeria">Galeria</a>
             <a href="#requisitos">Requisitos</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
               <i class="fa fa-bars"></i>
@@ -47,27 +47,30 @@
                     En las Tierras Intermedias gobernadas por la Reina Márika, la Eterna, el Círculo de Elden, origen del Árbol Áureo, ha sido destruido.
                     
                     Los descendientes de Márika, todos semidioses, reclamaron los fragmentos del Círculo de Elden conocidos como Grandes Runas. Fue entonces cuando la demencial corrupción de su renovada fuerza provocó una guerra: la Devastación.<span id="dots1">...</span><span id="more1" style="display: none;"><br> Una guerra que supuso el abandono de la Voluntad Mayor. Y ahora, la gracia que nos guía recaerá sobre el Sinluz desdeñado por la gracia del oro y exiliado de las Tierras Intermedias. Tú que has muerto, pero vives, con tu gracia tiempo ha perdida, recorre la senda hacia las Tierras Intermedias más allá del neblinoso mar para postrarte ante el Círculo de Elden.</span></p>
-                    <button class="intro-button"   id="myBtn1" onclick="toggleText('myBtn1', 'dots1', 'more1')">Read more</button>
+                    <button class="intro-button"   id="myBtn1" onclick="toggleText('myBtn1', 'dots1', 'more1')">Leer mas</button>
                 
             </div>
             <div class="col-2">
-                <div class="container">
-                <iframe class=".responsive-iframe" src="https://www.youtube.com/embed/CA0Ym7Ag0nI?si=3-eAYqrHWMy8Ujdc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>            
-                </div>
+             
+                    <video autoplay="" muted="" loop="" id="trailer">
+                        <source src="./video/trailer.mp4">
+                    </video>
+                     
+                
             </div>
         </div>
     </section>
     <!--  Seccion de personajes  -->
-    <section id="characters">
-        <h1 class="title-characters">Characters</h1>
+    <section id="Personajes">
+        <h1 class="title-Personajes">Personajes</h1>
 
         <div class="grid-4">
             <div class="col-4">
                 <div class="card">
                     <img src="./img/bandido.webp" alt="">
                     <h3>Bandido</h3>
-                    <p>Un peligroso bandido que ataca a los puntos debiles.<span id="dots2">...</span><span id="more2" style="display:none"><br> Destaca en combate a distancia con arcos.</span></p>
-                    <button class="intro-button"   id="myBtn2" onclick="toggleText('myBtn2', 'dots2', 'more2')">Read more</button>
+                    <p>Arma:<span id="dots2">...</span><span id="more2" style="display:none"><br> Dagas y arcos.</span></p>
+                    <button class="intro-button"   id="myBtn2" onclick="toggleText('myBtn2', 'dots2', 'more2')">Leer mas</button>
                 </div>
               
             </div>
@@ -75,8 +78,8 @@
                 <div class="card">
                     <img src="./img/guerrero.webp" alt="">
                     <h3>Guerrero</h3>
-                    <p>Un guerrero de una tribu nómada que empuña armas en ambas manos.<span id="dots3">...</span><span id="more3" style="display:none"> <br>Técnica excepcional</span></p>
-                    <button class="intro-button"   id="myBtn3" onclick="toggleText('myBtn3', 'dots3', 'more3')">Read more</button>
+                    <p>Armas:<span id="dots3">...</span><span id="more3" style="display:none"> <br>Hachas dobles.</span></p>
+                    <button class="intro-button"   id="myBtn3" onclick="toggleText('myBtn3', 'dots3', 'more3')">Leer mas</button>
                     </div>
             </div>
             <div class="col-4">
@@ -84,8 +87,8 @@
 
                 <img src="./img/atrologo.webp" alt="">
                 <h3>Atrólogo</h3>
-                    <p>Un erudito que lee el destino en las estrellas.<span id="dots4">...</span><span id="more4" style="display:none"><br>Seguidor de la escuela de hechiceria de estrellas refulgentes.</span></p>
-                    <button class="intro-button"   id="myBtn4" onclick="toggleText('myBtn4', 'dots4', 'more4')">Read more</button>
+                    <p>Armas:<span id="dots4">...</span><span id="more4" style="display:none"><br>Baston y grimorio.</span></p>
+                    <button class="intro-button"   id="myBtn4" onclick="toggleText('myBtn4', 'dots4', 'more4')">Leer mas</button>
                     </div>
             </div>
             <div class="col-4">
@@ -93,8 +96,8 @@
 
                 <img src="./img/samurai.webp" alt="">
                 <h3>Samurai</h3>
-                    <p>Un habil luchador de los lejanos territorios del Cañaveral.<span id="dots5">...</span><span id="more5" style="display:none"> <br>Diestro con catanas y arcos largos.</span> </p>
-                    <button class="intro-button"   id="myBtn5" onclick="toggleText('myBtn5', 'dots5', 'more5')">Read more</button>
+                    <p>Armas:<span id="dots5">...</span><span id="more5" style="display:none"> <br>Catanas y arcos largos.</span> </p>
+                    <button class="intro-button"   id="myBtn5" onclick="toggleText('myBtn5', 'dots5', 'more5')">Leer mas</button>
                     </div>
             </div>
         </div>
@@ -102,13 +105,13 @@
         
     </section>
     <!--  Seccion de galeria  -->
-    <section id="gallery">
-        <h1 class="title-gallery">Gallery</h1>
+    <section id="Galeria">
+        <h1 class="title-Galeria">Galeria</h1>
 
                 <div class="accordion">
 
                 <article>
-                    <input id="article1" type="radio" name="articles" checked>
+                    <input id="article1" type="radio" name="articles">
                     <label for="article1">
                     <h2>Malenia</h2>
                     </label>
@@ -161,7 +164,7 @@
         <h1 class="title-requisitos">Requisitos</h1>
         <div class="accordion">
             <article>
-                <input id="article5" type="radio" name="articles" checked>
+                <input id="article5" type="radio" name="articles">
                 <label for="article5">
                 <h2>Minimos</h2>
                 </label>
@@ -189,12 +192,12 @@
                     <nav>
                         <ul>
                             <li>OS: Windows 11/10</li>
-                            <li>Processor: Intel Core i7-8700K | AMD Ryzen 5 3600X</li>
-                            <li>Memory: 16 GB RAM</li>
-                            <li>Graphics: Nvidia GeForce GTX 1070, 8 GB | AMD Radeon RX VEGA 56, 8 GB</li>
+                            <li>Procesador: Intel Core i7-8700K | AMD Ryzen 5 3600X</li>
+                            <li>Memoria: 16 GB RAM</li>
+                            <li>Gráfica: Nvidia GeForce GTX 1070, 8 GB | AMD Radeon RX VEGA 56, 8 GB</li>
                             <li>DirectX: Version 12 (Feature Level 12.0)</li>
-                            <li>Storage: 60 GB available space</li>
-                            <li>Sound Card: Windows-Compatible Audio device</li>
+                            <li>Almacenamiento: 60 GB espacio disponible</li>
+                            <li>Tarjeta de Sonido: Windows-Compatible Audio device</li>
                         </ul>
                     </nav>
                 </div>
@@ -202,7 +205,7 @@
         </div>
     </section>
 
-<!-- <section>otra sección</section> -->
+
     <!--  Footer  -->
     <footer>
         <div class="grid-3d">
@@ -216,13 +219,13 @@
                 <i class="fa fa-linkedin" aria-hidden="true"></i>
                 <i class="fa fa-github" aria-hidden="true"></i>
 
-               <h3>Site oficial:</h3>
+               <h3>Sitio oficial:</h3>
                <a href="https://es.bandainamcoent.eu/elden-ring/elden-ring" target="_blank">Elden Ring</a>
 
                 <!-- créditos hechos en ventana modal de w3school -->
 
                 <!-- Trigger/Open The Modal -->
-                <h3 id="myBtn6">Créditos</h3>
+                <h3 id="myBtn">Créditos</h3>
 
                 <!-- The Modal -->
                 <div id="myModal" class="modal">
@@ -234,28 +237,27 @@
                   <p>Ab quia quidem illo vel repellendus quod voluptatem rerum! Placeat quos molestiae in dignissimos sit iusto voluptas neque magni unde vitae! Eum veniam optio, libero quos aliquid ea harum quae!</p>
                   <p>Molestias est, explicabo atque fuga nihil maxime magnam quisquam exercitationem sed in debitis expedita modi sequi velit suscipit minus animi praesentium, officia cupiditate ut maiores sunt veritatis id. Dolor, perferendis.</p>
                 </div>
-
 </div> 
 
             </div>
             <div class="col-4">
-               <a href="#"><p>Home</p></a>
-               <a href="#intro"><p>Introduction</p></a>
-               <a href="#seasons"><p>Characters</p></a>
-               <a href="#gallery"><p>Gallery</p></a>
+               <a href="#"><p>Inicio</p></a>
+               <a href="#intro"><p>Introduccion</p></a>
+               <a href="#seasons"><p>Personajes</p></a>
+               <a href="#Galeria"><p>Galeria</p></a>
                <a href="#requisitos"><p>Requisitos</p></a>
                <a href="https://es.bandainamcoent.eu/licensing"><p>Copyright</p></a>
                
             </div>
             <div class="col-2">
-               <!-- google maps -->
-             <div class="container">
+               <!-- bandai namco logo -->
+            
               <a href="https://es.bandainamcoent.eu/"><img id="footer-img" src="./img/bandainamco.png" alt="Pagina oficial bandainamco"></a>
              </div>
-            </div>
+            
         </div>
         <p class="footer__copyright">© 2010 - <em class="placeholder">2023</em> Bandai Namco Europe S.A.S</p>
-    </footer><!-- prácticamente obligatorio-->
+    </footer>
    </div>
 
     <!-- enlace al archivo de todos los js del website -->

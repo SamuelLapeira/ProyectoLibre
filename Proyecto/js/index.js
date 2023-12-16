@@ -16,11 +16,11 @@ function toggleText(btn, dots, more) {
 
   if (dotsElement.style.display === "none") {
       dotsElement.style.display = "inline";
-      btnTextElement.innerHTML = "Read more";
+      btnTextElement.innerHTML = "Leer mas";
       moreTextElement.style.display = "none";
   } else {
       dotsElement.style.display = "none";
-      btnTextElement.innerHTML = "Read less";
+      btnTextElement.innerHTML = "Leer menos";
       moreTextElement.style.display = "inline";
   }
 }
@@ -31,7 +31,7 @@ function toggleText(btn, dots, more) {
 var modal = document.getElementById("myModal");
 
 // Get the button that opens the modal
-var btn = document.getElementById("myBtn6");
+var btn = document.getElementById("myBtn");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];

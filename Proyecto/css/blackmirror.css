@@ -33,13 +33,14 @@ html {
 
 body {margin:0;padding:0;   /* para desactivar el espacio de 
                                separación por defecto */
-      background-color: rgb(36, 51, 51);
+      background-color: #006666;
       font-family: textonormal;}
 
-#wrapper {background-color:rgb(26, 48, 48);
+#wrapper {background-color:#003333;
           color:white;
           width:100%;        /*heho para movile first*/
-          margin:auto;}     /* centrado automático */
+          margin:auto;
+          text-align: justify;}     /* centrado automático */
 
 
 
@@ -69,7 +70,7 @@ nav{
     
     /* Change the color of links on hover */
     .topnav a:hover {
-      background-color: #ddd;
+      background-color:#C7C700;
       color: black;
     }
     
@@ -80,7 +81,7 @@ nav{
 
     .topnav a.active:hover{
       color: black;
-      background-color:  #ddd;
+      background-color: #C7C700;
     }
     
     /* Hide the link that should open and close the topnav on small screens */
@@ -99,7 +100,7 @@ nav{
     }
 
     .a .fa-arrow-circle-up{
-      color: grey;
+      color: #C7C700;
     }
 /***************************   HERO SECTION *********************************/
 
@@ -126,8 +127,8 @@ nav{
 
 #hero button:hover{
       background-color: black;
-      color: grey ;
-      border: 2px solid grey;
+      color: #C7C700 ;
+      border: 2px solid #C7C700;
 }
 
 
@@ -139,26 +140,35 @@ nav{
 .title{
       font-family: blackmirror;
       padding-top: 6vh;
+      margin-bottom: 2%;
+      color: #C7C700;
 }
 
-.title-characters{
+.title-Personajes{
       font-family: blackmirror;
       padding-top: 6vh;
       margin-left: 2%;
+      margin-bottom: 2%;
+      color: #C7C700;
 }
 
-.title-gallery{
+.title-Galeria{
       font-family: blackmirror;
       padding-top: 6vh;
       padding-bottom: 3vh;
       text-align: left;
+      margin-bottom: 2%;
+      color: #C7C700;
 }
+
 .title-requisitos{
       font-family: blackmirror;
       padding-top: 6vh;
       padding-bottom: 3vh;
       text-align: left;
       margin-left: 3%;
+      margin-bottom: 2%;
+      color: #C7C700;
 }
 .grid-2{
       display: grid;
@@ -169,23 +179,36 @@ nav{
       padding: 4%;
 }
 
+#trailer {
+      border: 1px solid #C7C700 ;
+      width: 100%;
+      height: 100%;
+      position: relative;
+      padding: 3%;
+      top: auto;
+      right: auto;
+      left: auto;
+      bottom: auto;
+  }
+
 #introimg{
       width: 100%; /* 1 columna mobile first*/
       display: block;
       margin: auto;
+      margin-bottom: 2.8%;
 }
 
 #more {display: none;}
 
 .intro-button{
-      background-color: grey;
+      background-color: #C7C700;
       text-align: center;
       padding: 10px;
       font-size: 0.75rem;
       border: solid 1px black;
       border-radius: 10%;
       transition: 0.5s;
-
+      margin-top:2%
 }
 
 .intro-button:hover{
@@ -196,23 +219,24 @@ nav{
       box-shadow: #808080 3px 3px 3px;
 
 }
-/*************** charactersS SECTION (GRID DE 4) ***************/
+/*************** PersonajesS SECTION (GRID DE 4) ***************/
 
 .grid-4 {
       display: grid;
       grid-template-columns: 100%;
 }
 
-/*** estilo de la card dentro del grid 4 ***/
+/*** estilo dentro del grid 4 ***/
 .card{
-      border: 1px solid grey;
+      border: 1px solid #C7C700;
       
       padding: 4%;
       border-radius: 5%;
-      background-color: rgb(217, 217, 217);
+      background-image: url(../img/pergamino.jpg);
       color: black;
       transition: 1s;
       opacity: 0.7;
+      margin: 4%;
 }
 
 .card:hover{
@@ -233,7 +257,7 @@ nav{
 }
 
 .card button{
-      background-color: grey;
+      background-color: #C7C700;
       text-align: center;
       padding: 10px;
       font-size: 0.75rem;
@@ -263,17 +287,20 @@ nav{
       overflow: hidden;
       width: 100%;
       padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+      
     }
     
     /* Then style the iframe to fit in the container div with full height and width */
 #intro .responsive-iframe {
-      position: absolute;
+      position: relative;
       top: 0;
       left: 0;
       bottom: 0;
       right: 0;
       width: 100%;
       height: 100%;
+      visibility: visible;
+      
     }
 
 
@@ -287,9 +314,11 @@ nav{
   box-sizing: border-box;
 }
 
-#gallery {
+#Galeria {
   font-family: 'Open Sans', sans-serif;
-  background-color: #333;
+  background-image: url(../img/galeria.webp);
+  background-repeat: no-repeat;
+  background-size:cover;
   color: #fff;
   text-align: center;
   padding: 4%;
@@ -356,8 +385,12 @@ border-radius:50%;
 }
         
 footer .footer-img{
-  margin-top: 10%;
-
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
 }
 
 footer a {color:white;
@@ -371,48 +404,47 @@ footer .fa-whatsapp {background-color: #25D366;}
 
 /******* créditos ******************/
 
-/* The Modal (background) */
-.modal {
-display: none; /* Hidden by default */
-position: fixed; /* Stay in place */
-z-index: 1; /* Sit on top */
-left: 10%;
-top: 0;
-width: 80%; /* Full width */
-height: 100%; /* Full height */
-overflow: auto; /* Enable scroll if needed */
-background-color: rgb(0,0,0); /* Fallback color */
-background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-color:black;
-}
-
-/* Modal Content/Box */
-.modal-content {
-background-color: #fefefe;
-margin: 15% auto; /* 15% from the top and centered */
-padding: 20px;
-border: 1px solid #888;
-width: 80%; /* Could be more or less, depending on screen size */
-}
-
-/* The Close Button */
-.close {
-color: #aaa;
-float: right;
-font-size: 28px;
-font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-color: black;
-text-decoration: none;
-cursor: pointer;
-} 
-
-#myBtn6 {cursor:pointer;}
-
-/******* google maps en footer ***************/
+ /* The Modal (background) */
+ .modal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      left: 10%;
+      top: 0;
+      width: 80%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+      color:black;
+    }
+    
+    /* Modal Content/Box */
+    .modal-content {
+      background-color: #fefefe;
+      margin: 15% auto; /* 15% from the top and centered */
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%; /* Could be more or less, depending on screen size */
+    }
+    
+    /* The Close Button */
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    
+    .close:hover,
+    .close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    } 
+    
+    #myBtn {cursor:pointer;}
+/******* footer ***************/
 
 footer .container {
 position: relative;
